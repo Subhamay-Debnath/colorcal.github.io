@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ColorCal</title>
+</head>
+<body>
+    <div class="webcal">
+        <div class="cal">
+            <div class="diplay-unit">
+                <input type="text" id="displayunit" name="result-shower" placeholder="0" readonly>
+            </div>
+            <div class="numberpad-unit">
+                <div class="row">
+                    <button class="lb" onclick="input('7')">7</button>
+                    <button class="lb" onclick="input('8')">8</button>
+                    <button class="lb" onclick="input('9')">9</button>
+                    <button id="red" onclick="del()">C</button>
+                </div>
+                <div class="row">
+                    <button onclick="input('4')">4</button>
+                    <button onclick="input('5')">5</button>
+                    <button onclick="input('6')">6</button>
+                    <button class="lc" onclick="input('/')">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="input('3')">3</button>
+                    <button onclick="input('2')">2</button>
+                    <button onclick="input('1')">1</button>
+                    <button class="lc" onclick="input('*')">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="input('.')">.</button>
+                    <button onclick="input('0')">0</button>
+                    <button onclick="input('-')">-</button>
+                    <button class="lc" onclick="input('+')">+</button>
+                </div>
+                <div class="row">
+                    <button id="spec" onclick="eq()">=</button>
+                    <button id="reset"  onclick="cleanall()">AC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
